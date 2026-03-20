@@ -1,0 +1,65 @@
+{
+  "trigger": "i.?(a?m|am) home.? baby",
+  "music": {
+    "app": "Spotify",
+    "track": "spotify:track:08mG3Y1vljYA6bvDt4Wqkj",
+    "volume_during_briefing": 50,
+    "volume_normal": 100
+  },
+  "terminals": {
+    "count": 0,
+    "screen": "largest",
+    "width_pct": 100,
+    "profile": "Homebrew",
+    "themes": [
+      {"name": "Zoro", "emoji": "⚔️", "color": [12089, 65535, 4651]},
+      {"name": "Denji", "emoji": "🔥", "color": [65535, 49344, 0]},
+      {"name": "Itachi", "emoji": "👁️", "color": [65535, 16384, 16384]},
+      {"name": "Deku", "emoji": "💚", "color": [45568, 65535, 0]},
+      {"name": "Guts", "emoji": "🗡️", "color": [65535, 22016, 14848]},
+      {"name": "Nezuko", "emoji": "🌸", "color": [65535, 20480, 40960]},
+      {"name": "Ryuu", "emoji": "🐉", "color": [0, 65535, 65535]},
+      {"name": "Yuki", "emoji": "❄️", "color": [26112, 52224, 65535]},
+      {"name": "Kuro", "emoji": "🖤", "color": [65535, 55296, 0]}
+    ]
+  },
+  "apps": {
+    "music_player": {
+      "app": "Spotify",
+      "screen": "primary",
+      "position": "right",
+      "width_pct": 50
+    },
+    "chat": {
+      "app": "Slack",
+      "screen": "primary",
+      "position": "left",
+      "width_pct": 50
+    }
+  },
+  "features": {
+    "focus_mode": true,
+    "wallpaper": "black",
+    "startup_sound": true,
+    "greeting": "Welcome back! Initializing workshop mode.",
+    "notification": {
+      "title": "Workshop Mode",
+      "subtitle": "All systems online"
+    },
+    "jarvis": {
+      "enabled": false,
+      "api_port": 3333,
+      "speak_script": "",
+      "server_script": ""
+    },
+    "docker_check": {
+      "enabled": false,
+      "grep_pattern": "",
+      "dir": "",
+      "cmd": ""
+    }
+  },
+  "permissions": {
+    "skip_dangerous": false
+  }
+}

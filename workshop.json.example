@@ -1,0 +1,25 @@
+{
+  "music": {
+    "track": "spotify:track:YOUR_TRACK_ID_HERE"
+  },
+  "terminals": {
+    "count": 6
+  },
+  "apps": {
+    "chat": {
+      "app": "Slack",
+      "screen": "primary",
+      "position": "left",
+      "width_pct": 50
+    },
+    "music_player": {
+      "app": "Spotify",
+      "screen": "primary",
+      "position": "right",
+      "width_pct": 50
+    }
+  },
+  "features": {
+    "greeting": "Good morning! All systems coming online."
+  }
+}
