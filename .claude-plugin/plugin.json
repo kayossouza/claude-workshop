@@ -9,6 +9,5 @@
   "repository": "https://github.com/kayosouza/claude-workshop",
   "license": "MIT",
   "keywords": ["macos", "workspace", "terminal", "tiling", "productivity"],
-  "skills": "./skills/",
-  "hooks": "./hooks/hooks.json"
+  "skills": "./skills/"
 }
