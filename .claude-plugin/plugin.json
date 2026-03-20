@@ -1,0 +1,14 @@
+{
+  "name": "workshop-mode",
+  "version": "1.0.0",
+  "description": "Voice-triggered dev environment setup for macOS. Arranges terminals, music, and apps across your screens.",
+  "author": {
+    "name": "Kayo Souza",
+    "url": "https://github.com/kayosouza"
+  },
+  "repository": "https://github.com/kayosouza/claude-workshop",
+  "license": "MIT",
+  "keywords": ["macos", "workspace", "terminal", "tiling", "productivity"],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json"
+}

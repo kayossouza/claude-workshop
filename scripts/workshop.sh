@@ -6,7 +6,9 @@ set -euo pipefail
 # Arranges your development environment like Tony Stark's workshop.
 # ============================================================================
 
-WORKSHOP_DIR="$(cd "$(dirname "$0")" && pwd)"
+# Support both plugin mode (CLAUDE_PLUGIN_ROOT) and standalone install
+WORKSHOP_DIR="${CLAUDE_PLUGIN_ROOT:+${CLAUDE_PLUGIN_ROOT}/scripts}"
+WORKSHOP_DIR="${WORKSHOP_DIR:-$(cd "$(dirname "$0")" && pwd)}"
 
 # --- Parse arguments --------------------------------------------------------
 DRY_RUN=false

@@ -1,0 +1,20 @@
+{
+  "name": "claude-workshop",
+  "owner": {
+    "name": "Kayo Souza",
+    "email": "kayo@kinho.dev"
+  },
+  "metadata": {
+    "description": "Workshop Mode — voice-triggered dev environment for macOS"
+  },
+  "plugins": [
+    {
+      "name": "workshop-mode",
+      "source": "./",
+      "description": "Arranges terminals, music, and apps across your screens with a voice trigger",
+      "version": "1.0.0",
+      "keywords": ["macos", "workspace", "terminal", "tiling"],
+      "category": "productivity"
+    }
+  ]
+}

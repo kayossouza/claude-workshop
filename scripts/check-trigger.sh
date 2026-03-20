@@ -6,7 +6,9 @@
 
 set -uo pipefail
 
-WORKSHOP_DIR="$(cd "$(dirname "$0")" && pwd)"
+# Support both plugin mode (CLAUDE_PLUGIN_ROOT) and standalone install
+WORKSHOP_DIR="${CLAUDE_PLUGIN_ROOT:+${CLAUDE_PLUGIN_ROOT}/scripts}"
+WORKSHOP_DIR="${WORKSHOP_DIR:-$(cd "$(dirname "$0")" && pwd)}"
 CONFIG_FILE="$HOME/.claude/workshop.json"
 DEFAULTS_FILE="$WORKSHOP_DIR/defaults.json"
 

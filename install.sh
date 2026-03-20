@@ -92,9 +92,9 @@ mkdir -p "$COMMANDS_DIR"
 cp -R "$SOURCE_DIR/scripts/"* "$INSTALL_DIR/"
 echo "  Scripts    -> $INSTALL_DIR/"
 
-# --- Copy slash commands ----------------------------------------------------
-for cmd in "$SOURCE_DIR"/commands/*.md; do
-  [ -f "$cmd" ] && cp "$cmd" "$COMMANDS_DIR/"
+# --- Copy slash commands from skills/ (flatten for standalone installs) -----
+for skill_dir in "$SOURCE_DIR"/skills/*/; do
+  [ -f "$skill_dir/SKILL.md" ] && cp "$skill_dir/SKILL.md" "$COMMANDS_DIR/$(basename "$skill_dir").md"
 done
 echo "  Commands   -> $COMMANDS_DIR/"
 

@@ -6,17 +6,24 @@ Transform your Mac into a developer workshop with a single voice trigger. Type y
 
 ## Install
 
+### As a Claude Code Plugin (recommended)
+
+```bash
+/plugin marketplace add kayosouza/claude-workshop
+/plugin install workshop-mode
+```
+
+Then run `/workshop-mode:workshop-setup` to configure your trigger phrase, music, and layout.
+
+### Standalone
+
 ```bash
 git clone https://github.com/kayosouza/claude-workshop.git
 cd claude-workshop
 ./install.sh
 ```
 
-The installer walks you through setup:
-- **Trigger phrase** — what you type to activate (default: "i'm home baby")
-- **Music** — Spotify, Apple Music, or none
-- **Terminal count** — fixed number or auto-detect
-- **Apps** — which apps to arrange on your screens
+The interactive installer walks you through setup: trigger phrase, music, terminal count, and app layout.
 
 ## Usage
 
@@ -27,13 +34,13 @@ Type your trigger phrase in Claude Code. That's it.
 Workshop online. 6 terminals + Spotify + Slack arranged.
 ```
 
-Or use slash commands:
+Or use skills (plugin) / slash commands (standalone):
 
 ```
-/workshop              # Full activation
-/workshop --dry-run    # Preview layout without moving windows
-/workshop --detect-only # Show detected screens
-/workshop-setup        # Reconfigure interactively with Claude
+/workshop-mode:workshop              # Full activation
+/workshop-mode:workshop --dry-run    # Preview layout without moving windows
+/workshop-mode:workshop --detect-only # Show detected screens
+/workshop-mode:workshop-setup        # Reconfigure interactively with Claude
 ```
 
 ## How It Works

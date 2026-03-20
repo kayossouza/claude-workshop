@@ -1,10 +1,15 @@
+---
+name: workshop
+description: Activate Workshop Mode to arrange your dev environment, or preview the layout with --dry-run
+---
+
 Run the Workshop Mode script to arrange your development environment.
 
 Arguments: $ARGUMENTS
 
-If arguments contain "setup" or "configure", tell the user to run `/workshop-setup` instead.
+If arguments contain "setup" or "configure", tell the user to run `/workshop-mode:workshop-setup` instead.
 
-Otherwise, execute: `~/.claude/scripts/workshop/workshop.sh $ARGUMENTS`
+Otherwise, execute: `${CLAUDE_PLUGIN_ROOT}/scripts/workshop.sh $ARGUMENTS`
 
 Modes:
 - No arguments: full workshop activation (arrange windows, play music, etc.)
