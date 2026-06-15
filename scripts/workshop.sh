@@ -29,7 +29,9 @@ CONFIG="$(python3 -c "
 import json, sys
 def deep_merge(base, override):
     for k, v in override.items():
-        if k in base and isinstance(base[k], dict) and isinstance(v, dict):
+        if v is None:
+            base.pop(k, None)            # null in override deletes the inherited key
+        elif k in base and isinstance(base[k], dict) and isinstance(v, dict):
             deep_merge(base[k], v)
         else:
             base[k] = v
